@@ -1,0 +1,12 @@
+source 'https://github.com/CocoaPods/Specs.git'
+platform:ios,'7.0'
+
+pod 'AVOSCloud'
+pod 'JSQMessagesViewController'
+pod 'AFNetworking', '~> 2.0'
+pod 'MBProgressHUD'
+pod 'IQKeyboardManager'
+pod 'TSMessages'
+pod 'SDWebImage'
+pod 'BlocksKit'
+pod 'TOWebViewController'
