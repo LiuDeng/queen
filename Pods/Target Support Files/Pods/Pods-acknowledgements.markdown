@@ -3,7 +3,7 @@ This application makes use of the following third party libraries:
 
 ## AFNetworking
 
-Copyright (c) 2013-2014 AFNetworking (http://afnetworking.com/)
+Copyright (c) 2013-2015 AFNetworking (http://afnetworking.com/)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -26,7 +26,7 @@ THE SOFTWARE.
 
 ## AVOSCloud
 
-© Copyright 2013 AVOS Systems, Inc. See https://cn.avoscloud.com/terms.html
+© Copyright 2015 LeanCloud, Inc. See https://leancloud.cn/terms.html
 
 ## BlocksKit
 
@@ -134,7 +134,7 @@ OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 ## MBProgressHUD
 
-Copyright (c) 2013 Matej Bukovinski
+Copyright (c) 2009-2015 Matej Bukovinski
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

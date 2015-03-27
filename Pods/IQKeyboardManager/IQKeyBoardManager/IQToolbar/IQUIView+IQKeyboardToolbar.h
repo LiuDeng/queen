@@ -24,30 +24,55 @@
 
 #import <UIKit/UIView.h>
 
-///*  @const kIQRightButtonToolbarTag        Default tag for toolbar with Right button           -1001.   */
-//extern NSInteger const kIQRightButtonToolbarTag;
-///*  @const kIQRightLeftButtonToolbarTag    Default tag for toolbar with Right/Left buttons     -1003.   */
-//extern NSInteger const kIQRightLeftButtonToolbarTag;
-///*  @const kIQCancelDoneButtonToolbarTag   Default tag for toolbar with Cancel/Done buttons    -1004.   */
-//extern NSInteger const kIQCancelDoneButtonToolbarTag;
-
 @class UIBarButtonItem;
 
-/*!
+/**
     @category UIView (IQToolbarAddition)
  
     @abstract UIView category methods to add IQToolbar on UIKeyboard.
  */
 @interface UIView (IQToolbarAddition)
 
-/*!
+/**
     @property shouldHideTitle
  
     @abstract if shouldHideTitle is YES, then title will not be added to the toolbar. Default to NO.
  */
 @property (assign, nonatomic) BOOL shouldHideTitle;
 
-/*!
+/**
+    @method setCustomPreviousTarget:action:
+    @method setCustomNextTarget:action:
+    @method setCustomDoneTarget:action:
+ 
+    @abstract Invoke action on target when the toolbar is created using IQKeyboardManager, you may add additional target & action to do get callback action. Note that setting custom previous/next/done selector doesn't affect native next/previous/done functionality, this is just used to notifiy user to do additional work according to your need.
+ */
+-(void)setCustomPreviousTarget:(id)target action:(SEL)action;
+-(void)setCustomNextTarget:(id)target action:(SEL)action;
+-(void)setCustomDoneTarget:(id)target action:(SEL)action;
+
+/**
+    @property previousInvocation
+ 
+    @abstract customized Invocation to be called on previous arrow action. previousInvocation is internally created using setCustomPreviousTarget: method.
+ */
+@property (strong, nonatomic) NSInvocation *previousInvocation;
+
+/**
+    @property nextInvocation
+ 
+    @abstract customized Invocation to be called on next arrow action. nextInvocation is internally created using setCustomNextTarget: method.
+ */
+@property (strong, nonatomic) NSInvocation *nextInvocation;
+
+/**
+    @property nextInvocation
+ 
+    @abstract customized Invocation to be called on done action. doneInvocation is internally created using setCustomDoneTarget: method.
+ */
+@property (strong, nonatomic) NSInvocation *doneInvocation;
+
+/**
     @method addDoneOnKeyboardWithTarget:action:
  
     @abstract Helper functions to add Done button on keyboard.
@@ -67,8 +92,7 @@
 - (void)addDoneOnKeyboardWithTarget:(id)target action:(SEL)action shouldShowPlaceholder:(BOOL)showPlaceholder;
 - (void)addDoneOnKeyboardWithTarget:(id)target action:(SEL)action titleText:(NSString*)titleText;
 
-
-/*!
+/**
     @method addCancelDoneOnKeyboardWithTarget:cancelAction:doneAction:
  
     @abstract Helper function to add Cancel and Done button on keyboard.
@@ -90,7 +114,7 @@
 - (void)addCancelDoneOnKeyboardWithTarget:(id)target cancelAction:(SEL)cancelAction doneAction:(SEL)doneAction shouldShowPlaceholder:(BOOL)showPlaceholder;
 - (void)addCancelDoneOnKeyboardWithTarget:(id)target cancelAction:(SEL)cancelAction doneAction:(SEL)doneAction titleText:(NSString*)titleText;
 
-/*!
+/**
     @method addPreviousNextDoneOnKeyboardWithTarget:previousAction:nextAction:doneAction
  
     @abstract Helper function to add SegmentedNextPrevious and Done button on keyboard.
@@ -111,7 +135,7 @@
 - (void)addPreviousNextDoneOnKeyboardWithTarget:(id)target previousAction:(SEL)previousAction nextAction:(SEL)nextAction doneAction:(SEL)doneAction shouldShowPlaceholder:(BOOL)showPlaceholder;
 - (void)addPreviousNextDoneOnKeyboardWithTarget:(id)target previousAction:(SEL)previousAction nextAction:(SEL)nextAction doneAction:(SEL)doneAction titleText:(NSString*)titleText;
 
-/*!
+/**
     @method setEnablePrevious:next:
  
     @abstract Helper function to enable and disable previous next buttons.

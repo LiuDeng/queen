@@ -23,9 +23,8 @@
 
 #import <Foundation/NSObjCRuntime.h>
 #import "IQKeyboardManagerConstants.h"
-#import <UIKit/UIBarButtonItem.h>
-
-/*!
+#import "IQBarButtonItem.h"
+/**
     @author Iftekhar Qurashi
  
 	@related hack.iftekhar@gmail.com
@@ -34,10 +33,20 @@
  
 	@abstract BarButtonItem with title text.
  */
-@interface IQTitleBarButtonItem : UIBarButtonItem
+@interface IQTitleBarButtonItem : IQBarButtonItem
 
-@property(nonatomic, strong) UIFont *font;  //Default is (system font 12.0 bold)
+/**
+    @property font
+ 
+    @abstract font to be used in bar button. Default is (system font 12.0 bold).
+ */
+@property(nonatomic, strong) UIFont *font;
 
+/**
+    @method initWithFrame:title:
+ 
+    @abstract initialize with frame and title.
+ */
 -(instancetype)initWithFrame:(CGRect)frame title:(NSString *)title NS_DESIGNATED_INITIALIZER;
 
 @end
