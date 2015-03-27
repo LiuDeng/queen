@@ -16,6 +16,14 @@
 		BD51C0F51A6BD4F200F9B382 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD51C0F41A6BD4F200F9B382 /* Images.xcassets */; };
 		BD51C0F81A6BD4F200F9B382 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD51C0F61A6BD4F200F9B382 /* LaunchScreen.xib */; };
 		BD51C1041A6BD4F200F9B382 /* queenTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BD51C1031A6BD4F200F9B382 /* queenTests.m */; };
+		BD825DBB1AC5163A00AA0F36 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD825DBA1AC5163A00AA0F36 /* MainViewController.m */; };
+		BD825DC31AC55AAD00AA0F36 /* WelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD825DBE1AC55AAD00AA0F36 /* WelcomeViewController.m */; };
+		BD825DC41AC55AAD00AA0F36 /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD825DC01AC55AAD00AA0F36 /* SignUpViewController.m */; };
+		BD825DC51AC55AAD00AA0F36 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD825DC21AC55AAD00AA0F36 /* LoginViewController.m */; };
+		BD825DC91AC55D6100AA0F36 /* MOHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = BD825DC81AC55D6100AA0F36 /* MOHelper.m */; };
+		BD825DCF1AC55D7800AA0F36 /* UIBarButtonItem+Badge.m in Sources */ = {isa = PBXBuildFile; fileRef = BD825DCC1AC55D7800AA0F36 /* UIBarButtonItem+Badge.m */; };
+		BD825DD01AC55D7800AA0F36 /* NSObject+DelayBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = BD825DCE1AC55D7800AA0F36 /* NSObject+DelayBlock.m */; };
+		BD825DD41AC566A000AA0F36 /* QueenListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD825DD31AC566A000AA0F36 /* QueenListViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +56,22 @@
 		BD51C1021A6BD4F200F9B382 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BD51C1031A6BD4F200F9B382 /* queenTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = queenTests.m; sourceTree = "<group>"; };
 		BD51C10F1A6C182A00F9B382 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		BD825DB91AC5163A00AA0F36 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		BD825DBA1AC5163A00AA0F36 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		BD825DBD1AC55AAD00AA0F36 /* WelcomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WelcomeViewController.h; sourceTree = "<group>"; };
+		BD825DBE1AC55AAD00AA0F36 /* WelcomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WelcomeViewController.m; sourceTree = "<group>"; };
+		BD825DBF1AC55AAD00AA0F36 /* SignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpViewController.h; sourceTree = "<group>"; };
+		BD825DC01AC55AAD00AA0F36 /* SignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpViewController.m; sourceTree = "<group>"; };
+		BD825DC11AC55AAD00AA0F36 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		BD825DC21AC55AAD00AA0F36 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		BD825DC71AC55D6100AA0F36 /* MOHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOHelper.h; sourceTree = "<group>"; };
+		BD825DC81AC55D6100AA0F36 /* MOHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOHelper.m; sourceTree = "<group>"; };
+		BD825DCB1AC55D7800AA0F36 /* UIBarButtonItem+Badge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Badge.h"; sourceTree = "<group>"; };
+		BD825DCC1AC55D7800AA0F36 /* UIBarButtonItem+Badge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Badge.m"; sourceTree = "<group>"; };
+		BD825DCD1AC55D7800AA0F36 /* NSObject+DelayBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+DelayBlock.h"; sourceTree = "<group>"; };
+		BD825DCE1AC55D7800AA0F36 /* NSObject+DelayBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+DelayBlock.m"; sourceTree = "<group>"; };
+		BD825DD21AC566A000AA0F36 /* QueenListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QueenListViewController.h; sourceTree = "<group>"; };
+		BD825DD31AC566A000AA0F36 /* QueenListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QueenListViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +133,10 @@
 		BD51C0E31A6BD4F200F9B382 /* queen */ = {
 			isa = PBXGroup;
 			children = (
+				BD825DC61AC55D5500AA0F36 /* manager */,
+				BD825DB81AC50D2500AA0F36 /* modal */,
+				BD825DB71AC50D1D00AA0F36 /* controller */,
+				BD825DB61AC50D1400AA0F36 /* view */,
 				BD51C0E81A6BD4F200F9B382 /* AppDelegate.h */,
 				BD51C0E91A6BD4F200F9B382 /* AppDelegate.m */,
 				BD51C0EB1A6BD4F200F9B382 /* FirstViewController.h */,
@@ -148,6 +176,74 @@
 				BD51C1021A6BD4F200F9B382 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BD825DB61AC50D1400AA0F36 /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = view;
+			sourceTree = "<group>";
+		};
+		BD825DB71AC50D1D00AA0F36 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				BD825DD11AC5665100AA0F36 /* chatRoom */,
+				BD825DBC1AC55A8800AA0F36 /* login */,
+				BD825DB91AC5163A00AA0F36 /* MainViewController.h */,
+				BD825DBA1AC5163A00AA0F36 /* MainViewController.m */,
+			);
+			name = controller;
+			sourceTree = "<group>";
+		};
+		BD825DB81AC50D2500AA0F36 /* modal */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = modal;
+			sourceTree = "<group>";
+		};
+		BD825DBC1AC55A8800AA0F36 /* login */ = {
+			isa = PBXGroup;
+			children = (
+				BD825DBD1AC55AAD00AA0F36 /* WelcomeViewController.h */,
+				BD825DBE1AC55AAD00AA0F36 /* WelcomeViewController.m */,
+				BD825DBF1AC55AAD00AA0F36 /* SignUpViewController.h */,
+				BD825DC01AC55AAD00AA0F36 /* SignUpViewController.m */,
+				BD825DC11AC55AAD00AA0F36 /* LoginViewController.h */,
+				BD825DC21AC55AAD00AA0F36 /* LoginViewController.m */,
+			);
+			name = login;
+			sourceTree = "<group>";
+		};
+		BD825DC61AC55D5500AA0F36 /* manager */ = {
+			isa = PBXGroup;
+			children = (
+				BD825DCA1AC55D6A00AA0F36 /* category */,
+				BD825DC71AC55D6100AA0F36 /* MOHelper.h */,
+				BD825DC81AC55D6100AA0F36 /* MOHelper.m */,
+			);
+			name = manager;
+			sourceTree = "<group>";
+		};
+		BD825DCA1AC55D6A00AA0F36 /* category */ = {
+			isa = PBXGroup;
+			children = (
+				BD825DCB1AC55D7800AA0F36 /* UIBarButtonItem+Badge.h */,
+				BD825DCC1AC55D7800AA0F36 /* UIBarButtonItem+Badge.m */,
+				BD825DCD1AC55D7800AA0F36 /* NSObject+DelayBlock.h */,
+				BD825DCE1AC55D7800AA0F36 /* NSObject+DelayBlock.m */,
+			);
+			name = category;
+			sourceTree = "<group>";
+		};
+		BD825DD11AC5665100AA0F36 /* chatRoom */ = {
+			isa = PBXGroup;
+			children = (
+				BD825DD21AC566A000AA0F36 /* QueenListViewController.h */,
+				BD825DD31AC566A000AA0F36 /* QueenListViewController.m */,
+			);
+			name = chatRoom;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -285,10 +381,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD825DC51AC55AAD00AA0F36 /* LoginViewController.m in Sources */,
+				BD825DD41AC566A000AA0F36 /* QueenListViewController.m in Sources */,
 				BD51C0F01A6BD4F200F9B382 /* SecondViewController.m in Sources */,
 				BD51C0EA1A6BD4F200F9B382 /* AppDelegate.m in Sources */,
 				BD51C0ED1A6BD4F200F9B382 /* FirstViewController.m in Sources */,
+				BD825DCF1AC55D7800AA0F36 /* UIBarButtonItem+Badge.m in Sources */,
+				BD825DBB1AC5163A00AA0F36 /* MainViewController.m in Sources */,
 				BD51C0E71A6BD4F200F9B382 /* main.m in Sources */,
+				BD825DD01AC55D7800AA0F36 /* NSObject+DelayBlock.m in Sources */,
+				BD825DC91AC55D6100AA0F36 /* MOHelper.m in Sources */,
+				BD825DC41AC55AAD00AA0F36 /* SignUpViewController.m in Sources */,
+				BD825DC31AC55AAD00AA0F36 /* WelcomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

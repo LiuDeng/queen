@@ -21,6 +21,8 @@ PODS:
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
   - AVOSCloud (3.0.1)
+  - AVOSCloudIM (3.0.1):
+    - AVOSCloud
   - BlocksKit (2.2.5):
     - BlocksKit/All (= 2.2.5)
   - BlocksKit/All (2.2.5):
@@ -36,11 +38,16 @@ PODS:
   - BlocksKit/UIKit (2.2.5):
     - BlocksKit/Core
     - BlocksKit/DynamicDelegate
+  - Bolts (1.1.4)
+  - BZGFormField (1.1.2)
   - HexColors (2.2.1)
   - IQKeyboardManager (3.2.1.2)
   - JSQMessagesViewController (7.0.0):
     - JSQSystemSoundPlayer (~> 2.0.1)
   - JSQSystemSoundPlayer (2.0.1)
+  - MagicalRecord (2.2):
+    - MagicalRecord/Core (= 2.2)
+  - MagicalRecord/Core (2.2)
   - MBProgressHUD (0.9.1)
   - SDWebImage (3.7.2):
     - SDWebImage/Core (= 3.7.2)
@@ -48,29 +55,40 @@ PODS:
   - TOWebViewController (2.0.14)
   - TSMessages (0.9.12):
     - HexColors
+  - UMengAnalytics (3.4.6)
 
 DEPENDENCIES:
   - AFNetworking (~> 2.0)
   - AVOSCloud
+  - AVOSCloudIM
   - BlocksKit
+  - Bolts
+  - BZGFormField
   - IQKeyboardManager
   - JSQMessagesViewController
+  - MagicalRecord (~> 2.2)
   - MBProgressHUD
   - SDWebImage
   - TOWebViewController
   - TSMessages
+  - UMengAnalytics
 
 SPEC CHECKSUMS:
   AFNetworking: fefbce9660acb17f48ae0011292d4da0f457bf36
   AVOSCloud: 7eb247201941ebda786a2b7d82fe5a73768127b8
+  AVOSCloudIM: 4463c4b5f292cdb8748cafbc0c4bb4a14c412514
   BlocksKit: 4439e7f30a9f90743462ca63545a15c1f4304cef
+  Bolts: dd9fb8433d67f5acc3b6b4d1379bbc5513d716c1
+  BZGFormField: c469a07c251a9fd8bd8d8fce023896b15d752a99
   HexColors: 01384d2bbe8dc4ffa43c3b4135db6e976952d153
   IQKeyboardManager: 4adcd7cc9c17440a7cb74755f6f6c8389919c6bf
   JSQMessagesViewController: 9fd7e9ac96e9fc91f2deca86928e2cc916aeebaa
   JSQSystemSoundPlayer: 55528c699a283aae2220d3ae7b8b527d2ecef4b4
+  MagicalRecord: 2b471584fc9e3137f3d0a56967917baa4979e224
   MBProgressHUD: f3747dcbd45a9e855a6b0674550651e0b7ed250c
   SDWebImage: 71b7cdc1d1721d6a82ed62889030225f2c249e29
   TOWebViewController: d3eee5342e5f8508cc87107c96544f5dff01b802
   TSMessages: b2b5dc71f65146387e51f2600bb0eb8f3a6c4ab8
+  UMengAnalytics: bc026b4f4a9a162cdf5adc0c53c5a498de7a73bb
 
 COCOAPODS: 0.36.0
