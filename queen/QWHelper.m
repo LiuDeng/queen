@@ -6,10 +6,10 @@
 //  Copyright (c) 2014年 BRYQ. All rights reserved.
 //
 
-#import "MOHelper.h"
+#import "QWHelper.h"
 #import <CommonCrypto/CommonDigest.h>
 
-@implementation MOHelper
+@implementation QWHelper
 
 + (NSString *)stringFromDate:(NSDate *)date{
     
@@ -258,7 +258,7 @@
         return NO;
     }
 }
-/*
+
 //md5 32位 加密 （小写）
 + (NSString *)md5:(NSString *)str {
     
@@ -287,7 +287,7 @@
             result[28], result[29],result[30], result[31]];
     
 }
-*/
+
 
 + (NSMutableArray*)shuffleNSMutableArray:(NSMutableArray*)array{
     if (!array.count) {
@@ -416,36 +416,6 @@
     else {
         return NO;
     }
-}
-
-
-+(NSString*)hintForErrorCode:(int)code{
-    
-    NSString *errString = @"";
-    switch (code) {
-        case 500:
-            errString = @"亲，任务已经完成了哦";
-            break;
-        case 403:
-            errString = @"缺少必须得参数,请检查网络并重启应用";
-            break;
-        case 404:
-            errString = @"你的网络好像不太好(404)，请检查一下网络，再试试看吧";
-            break;
-            
-            
-        default:
-            errString = @"哥们网络又崩坏了，啥人品啊,试试重来吧";
-            break;
-    }
-    
-    return errString;
-}
-
-+(void)showAlertWithMessage:(NSString*)message{
-    
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:nil message:message delegate:nil cancelButtonTitle:@"确定" otherButtonTitles: nil];
-    [alert show];
 }
 
 + (int)getAgeByBirthday: (NSDate *)birthday {

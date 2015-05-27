@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface WelcomeViewController : UIViewController
+@interface QWWelcomeViewController : UIViewController
 
 @end

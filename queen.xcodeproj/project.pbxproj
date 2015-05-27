@@ -8,22 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		425DEE544542F2A8EBEDBE5F /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DE0C8FB09DE8E6FA0776763 /* libPods.a */; };
+		BD435C611B15C29C00ADD085 /* QWHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD435C601B15C29C00ADD085 /* QWHomeViewController.m */; };
 		BD51C0E71A6BD4F200F9B382 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BD51C0E61A6BD4F200F9B382 /* main.m */; };
 		BD51C0EA1A6BD4F200F9B382 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BD51C0E91A6BD4F200F9B382 /* AppDelegate.m */; };
-		BD51C0ED1A6BD4F200F9B382 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD51C0EC1A6BD4F200F9B382 /* FirstViewController.m */; };
-		BD51C0F01A6BD4F200F9B382 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD51C0EF1A6BD4F200F9B382 /* SecondViewController.m */; };
 		BD51C0F31A6BD4F200F9B382 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD51C0F11A6BD4F200F9B382 /* Main.storyboard */; };
 		BD51C0F51A6BD4F200F9B382 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD51C0F41A6BD4F200F9B382 /* Images.xcassets */; };
 		BD51C0F81A6BD4F200F9B382 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD51C0F61A6BD4F200F9B382 /* LaunchScreen.xib */; };
 		BD51C1041A6BD4F200F9B382 /* queenTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BD51C1031A6BD4F200F9B382 /* queenTests.m */; };
-		BD825DBB1AC5163A00AA0F36 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD825DBA1AC5163A00AA0F36 /* MainViewController.m */; };
-		BD825DC31AC55AAD00AA0F36 /* WelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD825DBE1AC55AAD00AA0F36 /* WelcomeViewController.m */; };
-		BD825DC41AC55AAD00AA0F36 /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD825DC01AC55AAD00AA0F36 /* SignUpViewController.m */; };
-		BD825DC51AC55AAD00AA0F36 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD825DC21AC55AAD00AA0F36 /* LoginViewController.m */; };
-		BD825DC91AC55D6100AA0F36 /* MOHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = BD825DC81AC55D6100AA0F36 /* MOHelper.m */; };
+		BD825DC31AC55AAD00AA0F36 /* QWWelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD825DBE1AC55AAD00AA0F36 /* QWWelcomeViewController.m */; };
+		BD825DC41AC55AAD00AA0F36 /* QWSignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD825DC01AC55AAD00AA0F36 /* QWSignUpViewController.m */; };
+		BD825DC51AC55AAD00AA0F36 /* QWLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD825DC21AC55AAD00AA0F36 /* QWLoginViewController.m */; };
+		BD825DC91AC55D6100AA0F36 /* QWHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = BD825DC81AC55D6100AA0F36 /* QWHelper.m */; };
 		BD825DCF1AC55D7800AA0F36 /* UIBarButtonItem+Badge.m in Sources */ = {isa = PBXBuildFile; fileRef = BD825DCC1AC55D7800AA0F36 /* UIBarButtonItem+Badge.m */; };
 		BD825DD01AC55D7800AA0F36 /* NSObject+DelayBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = BD825DCE1AC55D7800AA0F36 /* NSObject+DelayBlock.m */; };
-		BD825DD41AC566A000AA0F36 /* QueenListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD825DD31AC566A000AA0F36 /* QueenListViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,15 +37,13 @@
 		0DE0C8FB09DE8E6FA0776763 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C120D8173B3365A3F5EDFC7 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		7CDB190C5CB6019B68710981 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		BD435C5F1B15C29C00ADD085 /* QWHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QWHomeViewController.h; sourceTree = "<group>"; };
+		BD435C601B15C29C00ADD085 /* QWHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QWHomeViewController.m; sourceTree = "<group>"; };
 		BD51C0E11A6BD4F200F9B382 /* queen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = queen.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD51C0E51A6BD4F200F9B382 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BD51C0E61A6BD4F200F9B382 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		BD51C0E81A6BD4F200F9B382 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		BD51C0E91A6BD4F200F9B382 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		BD51C0EB1A6BD4F200F9B382 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		BD51C0EC1A6BD4F200F9B382 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
-		BD51C0EE1A6BD4F200F9B382 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		BD51C0EF1A6BD4F200F9B382 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		BD51C0F21A6BD4F200F9B382 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BD51C0F41A6BD4F200F9B382 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		BD51C0F71A6BD4F200F9B382 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -56,22 +51,18 @@
 		BD51C1021A6BD4F200F9B382 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BD51C1031A6BD4F200F9B382 /* queenTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = queenTests.m; sourceTree = "<group>"; };
 		BD51C10F1A6C182A00F9B382 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
-		BD825DB91AC5163A00AA0F36 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
-		BD825DBA1AC5163A00AA0F36 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
-		BD825DBD1AC55AAD00AA0F36 /* WelcomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WelcomeViewController.h; sourceTree = "<group>"; };
-		BD825DBE1AC55AAD00AA0F36 /* WelcomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WelcomeViewController.m; sourceTree = "<group>"; };
-		BD825DBF1AC55AAD00AA0F36 /* SignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpViewController.h; sourceTree = "<group>"; };
-		BD825DC01AC55AAD00AA0F36 /* SignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpViewController.m; sourceTree = "<group>"; };
-		BD825DC11AC55AAD00AA0F36 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
-		BD825DC21AC55AAD00AA0F36 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
-		BD825DC71AC55D6100AA0F36 /* MOHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOHelper.h; sourceTree = "<group>"; };
-		BD825DC81AC55D6100AA0F36 /* MOHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOHelper.m; sourceTree = "<group>"; };
+		BD825DBD1AC55AAD00AA0F36 /* QWWelcomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QWWelcomeViewController.h; sourceTree = "<group>"; };
+		BD825DBE1AC55AAD00AA0F36 /* QWWelcomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QWWelcomeViewController.m; sourceTree = "<group>"; };
+		BD825DBF1AC55AAD00AA0F36 /* QWSignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QWSignUpViewController.h; sourceTree = "<group>"; };
+		BD825DC01AC55AAD00AA0F36 /* QWSignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QWSignUpViewController.m; sourceTree = "<group>"; };
+		BD825DC11AC55AAD00AA0F36 /* QWLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QWLoginViewController.h; sourceTree = "<group>"; };
+		BD825DC21AC55AAD00AA0F36 /* QWLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QWLoginViewController.m; sourceTree = "<group>"; };
+		BD825DC71AC55D6100AA0F36 /* QWHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QWHelper.h; sourceTree = "<group>"; };
+		BD825DC81AC55D6100AA0F36 /* QWHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QWHelper.m; sourceTree = "<group>"; };
 		BD825DCB1AC55D7800AA0F36 /* UIBarButtonItem+Badge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Badge.h"; sourceTree = "<group>"; };
 		BD825DCC1AC55D7800AA0F36 /* UIBarButtonItem+Badge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Badge.m"; sourceTree = "<group>"; };
 		BD825DCD1AC55D7800AA0F36 /* NSObject+DelayBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+DelayBlock.h"; sourceTree = "<group>"; };
 		BD825DCE1AC55D7800AA0F36 /* NSObject+DelayBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+DelayBlock.m"; sourceTree = "<group>"; };
-		BD825DD21AC566A000AA0F36 /* QueenListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QueenListViewController.h; sourceTree = "<group>"; };
-		BD825DD31AC566A000AA0F36 /* QueenListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QueenListViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,10 +130,6 @@
 				BD825DB61AC50D1400AA0F36 /* view */,
 				BD51C0E81A6BD4F200F9B382 /* AppDelegate.h */,
 				BD51C0E91A6BD4F200F9B382 /* AppDelegate.m */,
-				BD51C0EB1A6BD4F200F9B382 /* FirstViewController.h */,
-				BD51C0EC1A6BD4F200F9B382 /* FirstViewController.m */,
-				BD51C0EE1A6BD4F200F9B382 /* SecondViewController.h */,
-				BD51C0EF1A6BD4F200F9B382 /* SecondViewController.m */,
 				BD51C0F11A6BD4F200F9B382 /* Main.storyboard */,
 				BD51C0F41A6BD4F200F9B382 /* Images.xcassets */,
 				BD51C0F61A6BD4F200F9B382 /* LaunchScreen.xib */,
@@ -188,10 +175,8 @@
 		BD825DB71AC50D1D00AA0F36 /* controller */ = {
 			isa = PBXGroup;
 			children = (
-				BD825DD11AC5665100AA0F36 /* chatRoom */,
+				BD825DD11AC5665100AA0F36 /* home */,
 				BD825DBC1AC55A8800AA0F36 /* login */,
-				BD825DB91AC5163A00AA0F36 /* MainViewController.h */,
-				BD825DBA1AC5163A00AA0F36 /* MainViewController.m */,
 			);
 			name = controller;
 			sourceTree = "<group>";
@@ -206,12 +191,12 @@
 		BD825DBC1AC55A8800AA0F36 /* login */ = {
 			isa = PBXGroup;
 			children = (
-				BD825DBD1AC55AAD00AA0F36 /* WelcomeViewController.h */,
-				BD825DBE1AC55AAD00AA0F36 /* WelcomeViewController.m */,
-				BD825DBF1AC55AAD00AA0F36 /* SignUpViewController.h */,
-				BD825DC01AC55AAD00AA0F36 /* SignUpViewController.m */,
-				BD825DC11AC55AAD00AA0F36 /* LoginViewController.h */,
-				BD825DC21AC55AAD00AA0F36 /* LoginViewController.m */,
+				BD825DBD1AC55AAD00AA0F36 /* QWWelcomeViewController.h */,
+				BD825DBE1AC55AAD00AA0F36 /* QWWelcomeViewController.m */,
+				BD825DBF1AC55AAD00AA0F36 /* QWSignUpViewController.h */,
+				BD825DC01AC55AAD00AA0F36 /* QWSignUpViewController.m */,
+				BD825DC11AC55AAD00AA0F36 /* QWLoginViewController.h */,
+				BD825DC21AC55AAD00AA0F36 /* QWLoginViewController.m */,
 			);
 			name = login;
 			sourceTree = "<group>";
@@ -220,8 +205,8 @@
 			isa = PBXGroup;
 			children = (
 				BD825DCA1AC55D6A00AA0F36 /* category */,
-				BD825DC71AC55D6100AA0F36 /* MOHelper.h */,
-				BD825DC81AC55D6100AA0F36 /* MOHelper.m */,
+				BD825DC71AC55D6100AA0F36 /* QWHelper.h */,
+				BD825DC81AC55D6100AA0F36 /* QWHelper.m */,
 			);
 			name = manager;
 			sourceTree = "<group>";
@@ -237,13 +222,13 @@
 			name = category;
 			sourceTree = "<group>";
 		};
-		BD825DD11AC5665100AA0F36 /* chatRoom */ = {
+		BD825DD11AC5665100AA0F36 /* home */ = {
 			isa = PBXGroup;
 			children = (
-				BD825DD21AC566A000AA0F36 /* QueenListViewController.h */,
-				BD825DD31AC566A000AA0F36 /* QueenListViewController.m */,
+				BD435C5F1B15C29C00ADD085 /* QWHomeViewController.h */,
+				BD435C601B15C29C00ADD085 /* QWHomeViewController.m */,
 			);
-			name = chatRoom;
+			name = home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -292,6 +277,7 @@
 		BD51C0D91A6BD4F200F9B382 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = QW;
 				LastUpgradeCheck = 0610;
 				ORGANIZATIONNAME = BRYQ;
 				TargetAttributes = {
@@ -381,18 +367,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BD825DC51AC55AAD00AA0F36 /* LoginViewController.m in Sources */,
-				BD825DD41AC566A000AA0F36 /* QueenListViewController.m in Sources */,
-				BD51C0F01A6BD4F200F9B382 /* SecondViewController.m in Sources */,
+				BD825DC51AC55AAD00AA0F36 /* QWLoginViewController.m in Sources */,
 				BD51C0EA1A6BD4F200F9B382 /* AppDelegate.m in Sources */,
-				BD51C0ED1A6BD4F200F9B382 /* FirstViewController.m in Sources */,
+				BD435C611B15C29C00ADD085 /* QWHomeViewController.m in Sources */,
 				BD825DCF1AC55D7800AA0F36 /* UIBarButtonItem+Badge.m in Sources */,
-				BD825DBB1AC5163A00AA0F36 /* MainViewController.m in Sources */,
 				BD51C0E71A6BD4F200F9B382 /* main.m in Sources */,
 				BD825DD01AC55D7800AA0F36 /* NSObject+DelayBlock.m in Sources */,
-				BD825DC91AC55D6100AA0F36 /* MOHelper.m in Sources */,
-				BD825DC41AC55AAD00AA0F36 /* SignUpViewController.m in Sources */,
-				BD825DC31AC55AAD00AA0F36 /* WelcomeViewController.m in Sources */,
+				BD825DC91AC55D6100AA0F36 /* QWHelper.m in Sources */,
+				BD825DC41AC55AAD00AA0F36 /* QWSignUpViewController.m in Sources */,
+				BD825DC31AC55AAD00AA0F36 /* QWWelcomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

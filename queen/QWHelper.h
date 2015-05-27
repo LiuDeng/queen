@@ -11,7 +11,7 @@
 #import <Bolts.h>
 #import "NSObject+DelayBlock.h"
 
-@interface MOHelper : NSObject
+@interface QWHelper : NSObject
 
 //日期转换为字符串
 + (NSString *)stringFromDate:(NSDate *)date;
@@ -40,14 +40,8 @@
 //异步获取用户
 + (BFTask *)findAsyncUser:(NSString *)userId;
 
-//设置installId，判断设备是否已安装app
-+(void)setInstalledId;
-
-//获取installId，判断设备是否已安装app
-+(BOOL)getInstalledId;
-
 //MD5加密 32位 小写
-//+ (NSString *)md5:(NSString *)str;
++ (NSString *)md5:(NSString *)str;
 
 //打乱NSMutableArray顺序
 + (NSMutableArray*)shuffleNSMutableArray:(NSMutableArray*)array;
@@ -66,12 +60,6 @@
 
 //判断该date是否为今天
 +(BOOL)isDateEqualToYesterday:(NSDate*)date;
-
-//根据服务器返回error code,展示相关用户提示语
-+(NSString*)hintForErrorCode:(int)code;
-
-//show alert
-+(void)showAlertWithMessage:(NSString*)message;
 
 //根据生日拿岁数
 + (int)getAgeByBirthday: (NSDate *)birthday;

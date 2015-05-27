@@ -9,6 +9,6 @@
 #import <UIKit/UIKit.h>
 #import <BZGFormField.h>
 
-@interface LoginViewController : UIViewController<BZGFormFieldDelegate>
+@interface QWLoginViewController : UIViewController<BZGFormFieldDelegate>
 
 @end

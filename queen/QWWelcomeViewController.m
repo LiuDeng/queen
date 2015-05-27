@@ -6,17 +6,19 @@
 //  Copyright (c) 2014年 bryq. All rights reserved.
 //
 
-#import "WelcomeViewController.h"
+#import "QWWelcomeViewController.h"
 
 
-@interface WelcomeViewController ()
+@interface QWWelcomeViewController ()
 
 - (IBAction)signup:(id)sender;
 - (IBAction)login:(id)sender;
+@property (weak, nonatomic) IBOutlet UIButton *phoneButton;
+@property (weak, nonatomic) IBOutlet UIButton *wechatButton;
 
 @end
 
-@implementation WelcomeViewController
+@implementation QWWelcomeViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -31,7 +33,10 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
-
+    self.phoneButton.layer.borderColor = [[UIColor darkGrayColor] CGColor];
+    self.phoneButton.layer.borderWidth = 1.0f;
+    self.wechatButton.layer.borderColor = [[UIColor darkGrayColor] CGColor];
+    self.wechatButton.layer.borderWidth = 1.0f;
 }
 
 -(void)viewWillAppear:(BOOL)animated{

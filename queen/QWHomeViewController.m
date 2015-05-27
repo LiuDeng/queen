@@ -1,34 +1,29 @@
 //
-//  QueenListViewController.m
+//  QWHomeViewController.m
 //  queen
 //
-//  Created by wenlin on 15/3/27.
+//  Created by wenlin on 15/5/27.
 //  Copyright (c) 2015年 BRYQ. All rights reserved.
 //
 
-#import "QueenListViewController.h"
+#import "QWHomeViewController.h"
 
-@interface QueenListViewController ()
+@interface QWHomeViewController ()
 
 @end
 
-@implementation QueenListViewController
+@implementation QWHomeViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    // Do any additional setup after loading the view.
 }
 
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
     
     if (![AVUser currentUser]) {
-        return [self.navigationController performSegueWithIdentifier:@"WelcomeSegue" sender:self];
+        [self.navigationController performSegueWithIdentifier:@"WelcomeSegue" sender:nil];
     }
 }
 

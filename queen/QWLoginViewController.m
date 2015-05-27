@@ -6,9 +6,9 @@
 //  Copyright (c) 2013年 isaced. All rights reserved.
 //
 
-#import "LoginViewController.h"
+#import "QWLoginViewController.h"
 
-@interface LoginViewController ()
+@interface QWLoginViewController ()
 @property (weak, nonatomic) IBOutlet BZGFormField *emailTextField;
 @property (weak, nonatomic) IBOutlet BZGFormField *passwordTextField;
 
@@ -17,7 +17,7 @@
 - (IBAction)validateLoginInfo:(id)sender;
 @end
 
-@implementation LoginViewController
+@implementation QWLoginViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -64,9 +64,9 @@
     self.emailTextField.textField.clearButtonMode = UITextFieldViewModeWhileEditing;
     self.emailTextField.textField.returnKeyType = UIReturnKeyNext;
     self.emailTextField.textField.tag = 180;
-    __weak LoginViewController *weakSelf = self;
+    __weak QWLoginViewController *weakSelf = self;
     [self.emailTextField setTextValidationBlock:^BOOL(BZGFormField *field,NSString *text) {
-        NSString *trimText = [MOHelper trimString:text];
+        NSString *trimText = [QWHelper trimString:text];
         // from https://github.com/benmcredmond/DHValidation/blob/master/DHValidation.m
         NSString *emailRegex = @"[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,4}";
         NSPredicate *emailTest = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", emailRegex];
@@ -84,7 +84,7 @@
     self.passwordTextField.textField.returnKeyType = UIReturnKeyDone;
     self.passwordTextField.textField.tag = 240;
     [self.passwordTextField setTextValidationBlock:^BOOL(BZGFormField *field,NSString *text) {
-        NSString *trimText = [MOHelper trimString:text];
+        NSString *trimText = [QWHelper trimString:text];
         if (trimText.length < 6) {
             weakSelf.passwordTextField.alertView.title = @"密码长度太短";
             return NO;
@@ -132,12 +132,12 @@
     if (self.emailTextField.formFieldState != BZGFormFieldStateValid) {
         error = @"请检查登录邮箱账号";
         [self.emailTextField.textField becomeFirstResponder];
-        return [MOHelper showErrorMessage:error inViewController:self];
+        return [QWHelper showErrorMessage:error inViewController:self];
     }
     if (self.passwordTextField.formFieldState != BZGFormFieldStateValid) {
         error = @"请检查密码";
         [self.passwordTextField.textField becomeFirstResponder];
-        return [MOHelper showErrorMessage:error inViewController:self];
+        return [QWHelper showErrorMessage:error inViewController:self];
     }
     
     MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.navigationController.view animated:YES];
@@ -166,7 +166,7 @@
             } else if (error) {
                 NSLog(@"Error: %@", [error userInfo][@"error"]);
             }
-            [MOHelper showErrorMessage:errorString inViewController:self];
+            [QWHelper showErrorMessage:errorString inViewController:self];
         }
         
     }];
