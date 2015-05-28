@@ -16,6 +16,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *phoneButton;
 @property (weak, nonatomic) IBOutlet UIButton *wechatButton;
 
+
 @end
 
 @implementation QWWelcomeViewController
@@ -42,6 +43,7 @@
 -(void)viewWillAppear:(BOOL)animated{
     
     [super viewWillAppear:animated];
+    self.navigationController.navigationBarHidden = YES;
     //[MobClick beginLogPageView:@"Welcome"];
     
 }
