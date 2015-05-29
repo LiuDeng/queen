@@ -11,10 +11,11 @@
 
 @interface QWWelcomeViewController ()
 
-- (IBAction)signup:(id)sender;
+
 - (IBAction)login:(id)sender;
-@property (weak, nonatomic) IBOutlet UIButton *phoneButton;
-@property (weak, nonatomic) IBOutlet UIButton *wechatButton;
+
+@property (weak, nonatomic) IBOutlet UITextField *mobileTextfield;
+@property (weak, nonatomic) IBOutlet UITextField *passwordTextfield;
 
 
 @end
@@ -34,10 +35,11 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
-    self.phoneButton.layer.borderColor = [[UIColor darkGrayColor] CGColor];
-    self.phoneButton.layer.borderWidth = 1.0f;
-    self.wechatButton.layer.borderColor = [[UIColor darkGrayColor] CGColor];
-    self.wechatButton.layer.borderWidth = 1.0f;
+    UIColor *color = [UIColor groupTableViewBackgroundColor];
+    self.mobileTextfield.attributedPlaceholder = [[NSAttributedString alloc] initWithString:@"请输入手机号码" attributes:@{NSForegroundColorAttributeName:color}];
+    self.passwordTextfield.attributedPlaceholder = [[NSAttributedString alloc] initWithString:@"请填写密码(不少于6位数)" attributes:@{NSForegroundColorAttributeName:color}];
+    
+    //self.mobileTextfield.at
 }
 
 -(void)viewWillAppear:(BOOL)animated{
@@ -57,10 +59,6 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
-}
-
-- (IBAction)signup:(id)sender {
-    [self performSegueWithIdentifier:@"SignUpSegue" sender:self];
 }
 
 - (IBAction)login:(id)sender {
