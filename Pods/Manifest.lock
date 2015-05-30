@@ -49,6 +49,7 @@ PODS:
     - MagicalRecord/Core (= 2.2)
   - MagicalRecord/Core (2.2)
   - MBProgressHUD (0.9.1)
+  - RegExCategories (1.0)
   - SDWebImage (3.7.2):
     - SDWebImage/Core (= 3.7.2)
   - SDWebImage/Core (3.7.2)
@@ -68,6 +69,7 @@ DEPENDENCIES:
   - JSQMessagesViewController
   - MagicalRecord (~> 2.2)
   - MBProgressHUD
+  - RegExCategories (~> 1.0)
   - SDWebImage
   - TOWebViewController
   - TSMessages
@@ -77,18 +79,19 @@ SPEC CHECKSUMS:
   AFNetworking: fefbce9660acb17f48ae0011292d4da0f457bf36
   AVOSCloud: 7eb247201941ebda786a2b7d82fe5a73768127b8
   AVOSCloudIM: 4463c4b5f292cdb8748cafbc0c4bb4a14c412514
-  BlocksKit: 4439e7f30a9f90743462ca63545a15c1f4304cef
-  Bolts: dd9fb8433d67f5acc3b6b4d1379bbc5513d716c1
-  BZGFormField: c469a07c251a9fd8bd8d8fce023896b15d752a99
-  HexColors: 01384d2bbe8dc4ffa43c3b4135db6e976952d153
+  BlocksKit: 7f422b971407001178d181a43b99014ea2591fe6
+  Bolts: f8e2f94edbf9fec7bb8de5ecaaa3aa6b7de6f64e
+  BZGFormField: 514c70504eaf51b7f9360ae1e34c39e6b8f5fd96
+  HexColors: abfd172e329dab59888614ccba6f216cec59289d
   IQKeyboardManager: 4adcd7cc9c17440a7cb74755f6f6c8389919c6bf
   JSQMessagesViewController: 9fd7e9ac96e9fc91f2deca86928e2cc916aeebaa
-  JSQSystemSoundPlayer: 55528c699a283aae2220d3ae7b8b527d2ecef4b4
-  MagicalRecord: 2b471584fc9e3137f3d0a56967917baa4979e224
-  MBProgressHUD: f3747dcbd45a9e855a6b0674550651e0b7ed250c
+  JSQSystemSoundPlayer: c5850e77a4363ffd374cd851154b9af93264ed8d
+  MagicalRecord: f8a56bb87ab6552f20c4bb8681a1958a197ea3cd
+  MBProgressHUD: c47f2c166c126cf2ce36498d80f33e754d4e93ad
+  RegExCategories: e68befacacd5bda853c88f70ec745cb2d0cfb89c
   SDWebImage: 71b7cdc1d1721d6a82ed62889030225f2c249e29
-  TOWebViewController: d3eee5342e5f8508cc87107c96544f5dff01b802
-  TSMessages: b2b5dc71f65146387e51f2600bb0eb8f3a6c4ab8
-  UMengAnalytics: bc026b4f4a9a162cdf5adc0c53c5a498de7a73bb
+  TOWebViewController: 2cfd0032d781cabd88a0995fbca9692c11f0797e
+  TSMessages: 2a52642128d7ab15b46930c810b9c9403a2b58f3
+  UMengAnalytics: 24c06f0ea07295d2f1c093f0fe12d196fd801ea4
 
 COCOAPODS: 0.36.0

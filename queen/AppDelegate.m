@@ -22,6 +22,9 @@
     //统计应用启动情况
     [AVAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
     
+    //通知
+    [TSMessage setDefaultViewController: self.window.rootViewController];
+    
     return YES;
 }
 

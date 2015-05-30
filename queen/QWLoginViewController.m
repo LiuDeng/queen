@@ -132,12 +132,12 @@
     if (self.emailTextField.formFieldState != BZGFormFieldStateValid) {
         error = @"请检查登录邮箱账号";
         [self.emailTextField.textField becomeFirstResponder];
-        return [QWHelper showErrorMessage:error inViewController:self];
+        return [QWHelper showErrorMessage:error];
     }
     if (self.passwordTextField.formFieldState != BZGFormFieldStateValid) {
         error = @"请检查密码";
         [self.passwordTextField.textField becomeFirstResponder];
-        return [QWHelper showErrorMessage:error inViewController:self];
+        return [QWHelper showErrorMessage:error];
     }
     
     MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.navigationController.view animated:YES];
@@ -166,7 +166,7 @@
             } else if (error) {
                 NSLog(@"Error: %@", [error userInfo][@"error"]);
             }
-            [QWHelper showErrorMessage:errorString inViewController:self];
+            [QWHelper showErrorMessage:errorString];
         }
         
     }];

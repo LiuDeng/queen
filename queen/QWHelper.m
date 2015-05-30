@@ -551,11 +551,13 @@
     return image;
 }
 
-+ (void)showErrorMessage:(NSString*)message inViewController:(UIViewController*)vc{
++ (void)showErrorMessage:(NSString*)message{
+    UIViewController *vc = [TSMessage defaultViewController];
     [TSMessage showNotificationInViewController:vc title:message subtitle:nil type:TSMessageNotificationTypeError];
 }
 
-+ (void)showSuccessMessage:(NSString*)message inViewController:(UIViewController*)vc{
++ (void)showSuccessMessage:(NSString*)message{
+    UIViewController *vc = [TSMessage defaultViewController];
     [TSMessage showNotificationInViewController:vc title:message subtitle:nil type:TSMessageNotificationTypeSuccess];
 }
 

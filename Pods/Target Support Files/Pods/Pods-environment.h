@@ -151,6 +151,12 @@
 #define COCOAPODS_VERSION_MINOR_MagicalRecord_Core 2
 #define COCOAPODS_VERSION_PATCH_MagicalRecord_Core 0
 
+// RegExCategories
+#define COCOAPODS_POD_AVAILABLE_RegExCategories
+#define COCOAPODS_VERSION_MAJOR_RegExCategories 1
+#define COCOAPODS_VERSION_MINOR_RegExCategories 0
+#define COCOAPODS_VERSION_PATCH_RegExCategories 0
+
 // SDWebImage
 #define COCOAPODS_POD_AVAILABLE_SDWebImage
 #define COCOAPODS_VERSION_MAJOR_SDWebImage 3

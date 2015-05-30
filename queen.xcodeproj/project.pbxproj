@@ -21,6 +21,9 @@
 		BD825DC91AC55D6100AA0F36 /* QWHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = BD825DC81AC55D6100AA0F36 /* QWHelper.m */; };
 		BD825DCF1AC55D7800AA0F36 /* UIBarButtonItem+Badge.m in Sources */ = {isa = PBXBuildFile; fileRef = BD825DCC1AC55D7800AA0F36 /* UIBarButtonItem+Badge.m */; };
 		BD825DD01AC55D7800AA0F36 /* NSObject+DelayBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = BD825DCE1AC55D7800AA0F36 /* NSObject+DelayBlock.m */; };
+		BDF403E51B19C0A500940ADE /* QWTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = BDF403E41B19C0A500940ADE /* QWTextField.m */; };
+		BDF403E81B19C25B00940ADE /* QWVerifyCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BDF403E71B19C25B00940ADE /* QWVerifyCodeViewController.m */; };
+		BDF403EB1B19C91700940ADE /* QWValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = BDF403EA1B19C91700940ADE /* QWValidator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +66,12 @@
 		BD825DCC1AC55D7800AA0F36 /* UIBarButtonItem+Badge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Badge.m"; sourceTree = "<group>"; };
 		BD825DCD1AC55D7800AA0F36 /* NSObject+DelayBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+DelayBlock.h"; sourceTree = "<group>"; };
 		BD825DCE1AC55D7800AA0F36 /* NSObject+DelayBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+DelayBlock.m"; sourceTree = "<group>"; };
+		BDF403E31B19C0A500940ADE /* QWTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QWTextField.h; sourceTree = "<group>"; };
+		BDF403E41B19C0A500940ADE /* QWTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QWTextField.m; sourceTree = "<group>"; };
+		BDF403E61B19C25B00940ADE /* QWVerifyCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QWVerifyCodeViewController.h; sourceTree = "<group>"; };
+		BDF403E71B19C25B00940ADE /* QWVerifyCodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QWVerifyCodeViewController.m; sourceTree = "<group>"; };
+		BDF403E91B19C91700940ADE /* QWValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QWValidator.h; sourceTree = "<group>"; };
+		BDF403EA1B19C91700940ADE /* QWValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QWValidator.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -197,6 +206,8 @@
 				BD825DC01AC55AAD00AA0F36 /* QWSignUpViewController.m */,
 				BD825DC11AC55AAD00AA0F36 /* QWLoginViewController.h */,
 				BD825DC21AC55AAD00AA0F36 /* QWLoginViewController.m */,
+				BDF403E61B19C25B00940ADE /* QWVerifyCodeViewController.h */,
+				BDF403E71B19C25B00940ADE /* QWVerifyCodeViewController.m */,
 			);
 			name = login;
 			sourceTree = "<group>";
@@ -204,9 +215,12 @@
 		BD825DC61AC55D5500AA0F36 /* manager */ = {
 			isa = PBXGroup;
 			children = (
+				BDF403E21B19C09800940ADE /* inheritance */,
 				BD825DCA1AC55D6A00AA0F36 /* category */,
 				BD825DC71AC55D6100AA0F36 /* QWHelper.h */,
 				BD825DC81AC55D6100AA0F36 /* QWHelper.m */,
+				BDF403E91B19C91700940ADE /* QWValidator.h */,
+				BDF403EA1B19C91700940ADE /* QWValidator.m */,
 			);
 			name = manager;
 			sourceTree = "<group>";
@@ -229,6 +243,15 @@
 				BD435C601B15C29C00ADD085 /* QWHomeViewController.m */,
 			);
 			name = home;
+			sourceTree = "<group>";
+		};
+		BDF403E21B19C09800940ADE /* inheritance */ = {
+			isa = PBXGroup;
+			children = (
+				BDF403E31B19C0A500940ADE /* QWTextField.h */,
+				BDF403E41B19C0A500940ADE /* QWTextField.m */,
+			);
+			name = inheritance;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -369,6 +392,7 @@
 			files = (
 				BD825DC51AC55AAD00AA0F36 /* QWLoginViewController.m in Sources */,
 				BD51C0EA1A6BD4F200F9B382 /* AppDelegate.m in Sources */,
+				BDF403EB1B19C91700940ADE /* QWValidator.m in Sources */,
 				BD435C611B15C29C00ADD085 /* QWHomeViewController.m in Sources */,
 				BD825DCF1AC55D7800AA0F36 /* UIBarButtonItem+Badge.m in Sources */,
 				BD51C0E71A6BD4F200F9B382 /* main.m in Sources */,
@@ -376,6 +400,8 @@
 				BD825DC91AC55D6100AA0F36 /* QWHelper.m in Sources */,
 				BD825DC41AC55AAD00AA0F36 /* QWSignUpViewController.m in Sources */,
 				BD825DC31AC55AAD00AA0F36 /* QWWelcomeViewController.m in Sources */,
+				BDF403E81B19C25B00940ADE /* QWVerifyCodeViewController.m in Sources */,
+				BDF403E51B19C0A500940ADE /* QWTextField.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

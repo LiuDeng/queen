@@ -68,8 +68,8 @@
 + (NSString *)getAstroByBirthday: (NSDate *) birthday;
 
 //错误信息
-+ (void)showErrorMessage:(NSString*)message inViewController:(UIViewController*)vc;
++ (void)showErrorMessage:(NSString*)message;
 
 //成功信息
-+ (void)showSuccessMessage:(NSString*)message inViewController:(UIViewController*)vc;
++ (void)showSuccessMessage:(NSString*)message;
 @end

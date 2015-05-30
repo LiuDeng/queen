@@ -7,6 +7,7 @@
 //
 
 #import "QWWelcomeViewController.h"
+#import "QWValidator.h"
 
 
 @interface QWWelcomeViewController ()
@@ -27,8 +28,7 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
-    }
-    return self;
+    }    return self;
 }
 
 - (void)viewDidLoad
@@ -39,21 +39,21 @@
     self.mobileTextfield.attributedPlaceholder = [[NSAttributedString alloc] initWithString:@"请输入手机号码" attributes:@{NSForegroundColorAttributeName:color}];
     self.passwordTextfield.attributedPlaceholder = [[NSAttributedString alloc] initWithString:@"请填写密码(不少于6位数)" attributes:@{NSForegroundColorAttributeName:color}];
     
-    //self.mobileTextfield.at
+
 }
 
 -(void)viewWillAppear:(BOOL)animated{
     
     [super viewWillAppear:animated];
     self.navigationController.navigationBarHidden = YES;
-    //[MobClick beginLogPageView:@"Welcome"];
+
     
 }
 
 -(void)viewWillDisappear:(BOOL)animated{
     
     [super viewWillDisappear:YES];
-    //[MobClick endLogPageView:@"Welcome"];
+
 }
 - (void)didReceiveMemoryWarning
 {
@@ -62,7 +62,19 @@
 }
 
 - (IBAction)login:(id)sender {
-    [self performSegueWithIdentifier:@"LoginSegue" sender:self];
+    //校验
+    /*
+    if (![QWValidator validateMobilePhone:self.mobileTextfield.text]) {
+        return;
+    }
+    */
+    
+    
+    //查找数据库,verify为true的手机号
+    
+    UIViewController *vc = [TSMessage defaultViewController];
+    [TSMessage showNotificationInViewController:vc title:@"测试" subtitle:nil type:TSMessageNotificationTypeError];
+    
 }
 
 @end
